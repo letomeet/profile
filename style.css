@@ -88,7 +88,7 @@ a:link, a:hover, a:active {
   height: auto;
   margin: 14px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 50%;
   transition: 2s;
 }
 #img-profile:link, #img-profile:hover, #img-profile:active {
