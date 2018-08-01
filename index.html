@@ -6,16 +6,41 @@
     <title>Loïg KEREBEL - Le Wagon Profile</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" type="images/png" href="https://res.cloudinary.com/crunchbase-production/image/upload/v1464256259/tl43iwuu6v4vyux7oqsk.png">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/crunchbase-production/image/upload/v1464256259/tl43iwuu6v4vyux7oqsk.png">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-        <div id="content">
+    <div id="sidebar">
+      <ul>
+        <li>
+          <a href="#summary" alt="Summary">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#social" alt="Social profiles">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#favorite-movies" alt="Favorite movies">
+            <i class="fa fa-file-video-o"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://lewagon.org" alt="Favorite movies" target="_blank">
+            <img alt="Le Wagon" src="https://image.ibb.co/jxcNfQ/logo_1.png" style="width: 90px; height: auto; margin: 0 4px; filter: brightness(150%) hue-rotate(90deg)"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content">
       <div class="container-fluid">
         <div class="card text-center" id="summary">
-          <img src="images/avatar.jpeg" alt="" id="img-profile">
+          <img src="img/avatar.jpeg" alt="" id="img-profile">
           <h1>Loïg Kérébel</h1>
           <h2>#batch-177-Paris @LeWagon</h2>
           <p class="description">
@@ -25,10 +50,10 @@
         </div>
 
         <div class="card text-center" id="social">
-          <h2 class="section-title" style="margin-right: -16px"><span id="title-border">You can find me here</span><span style="font-size: 32px;">✌🏻</span></h2>
-          <a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" src="images/facebook.svg" class="social-icon" ></a>
-          <a href="https://www.linkedin.com/in/" target="_blank"><img alt="LinkedIn" src="images/linkedin.svg" class="social-icon"></a>
-          <a href="https://twitter.com/" target="_blank"><img alt="Twitter" src="images/twitter.svg" class="social-icon"></a>
+          <h2 class="section-title" style="margin-right: -16px"><span id="title-border">You can find me here</span><span style="font-size: 32px;"> ✌🏻</span></h2>
+          <a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" src="img/facebook.svg" class="social-icon" ></a>
+          <a href="https://www.linkedin.com/in/" target="_blank"><img alt="LinkedIn" src="img/linkedin.svg" class="social-icon"></a>
+          <a href="https://twitter.com/" target="_blank"><img alt="Twitter" src="img/twitter.svg" class="social-icon"></a>
         </div>
 
         <div class="card" id="favorite-movies" >
@@ -74,8 +99,20 @@
           <p>This page has been coded during the <a href="http://lewagon.com/" target="_blank">FullStack program @LeWagon</a>.<br/>That was probably the best experience of my entire life!<span style="font-size: 18px">  🎉🎉😎</span></p>
         </div>
 
-
-
+        <div class="card text-center">
+          <h2 class="section-title"><span id="title-border">✉️ Contact me</span></h2>
+          <form>
+            <form class="cf">
+              <div class="half left cf">
+                <input type="text" id="input-name" placeholder="Name">
+                <input type="email" id="input-email" placeholder="Email address">
+                <input type="text" id="input-subject" placeholder="Subject">
+              </div>
+              <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" value="Submit" id="input-submit">
+            </form>
             <p>You prefer a direct email? <a href="mailto:kerebel.loig@gmail.com">Click here</a></p>
           </form>
         </div>

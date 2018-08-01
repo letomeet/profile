@@ -88,7 +88,7 @@ a:link, a:hover, a:active {
   height: auto;
   margin: 14px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+  border-radius: 4px;
   transition: 2s;
 }
 #img-profile:link, #img-profile:hover, #img-profile:active {
@@ -123,7 +123,33 @@ a:link, a:hover, a:active {
 #imdb-logo:link, #imdb-logo:hover, #imdb-logo:active {
   cursor: pointer;
 }
-
+#sidebar {
+  background-color: #DD5555;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 120px;
+  text-align: center;
+  animation: 2s bounceInDown;
+}
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+#sidebar li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  text-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 1);
+  transition: 1s;
+}
+#sidebar a:link, #sidebar a:hover, #sidebar a:active {
+  color: #FFF;
 }
 #wagon-logo {
   display: inline;
